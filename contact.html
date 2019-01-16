@@ -1,6 +1,10 @@
 <html>
     <head>
-        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     </head>
 <style>
     body{
@@ -50,23 +54,34 @@
         border-radius: 4px;
         margin-top: 20px;
     }
+    .white{
+        color: white;
+    }
 </style>
     <body>
         <div class="semi_page">
-            <b>CONTACT_US</b>
+            <!-- <b>CONTACT US</b> -->
         </div>
-        <div class="page">
-            <div class="page_left">
-                <form>
-                    <input type="text" placeholder="Your Name *">
-                    <input type="text" placeholder="Your Email *">
-                    <input type="text" placeholder="Your Phone *">
-                </form>
-            </div>
-            <div class="page_right">
-                <textarea rows="16" cols="61" placeholder="Your Message *"></textarea>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                   <form action="" method="GET" role="form">
+                       <h3 class="white">Contact us form</h3>
+                   
+                       <div class="form-group">
+                           <label for="" class="white">Name</label>
+                           <input type="text" class="form-control" id="" placeholder="enter your full name here">
+                           <label for="" class="white">Email</label>
+                           <input type="text" class="form-control" id="" placeholder="enter your email address here..">
+                           <label for="" class="white">Message</label>
+                           <textarea class="form-control" cols="20" rows="5"></textarea>
+                       </div>
+                       <button type="submit" class="btn btn-primary">Submit</button>
+                   </form> 
+                </div>
             </div>
         </div>
+       
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
