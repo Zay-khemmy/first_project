@@ -21,22 +21,22 @@
             <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"style="color:white;">Overview</a>
+                <a class="navbar-brand" href="#">Overview</a>
             </div>
                       
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                <li><a href="#" style="color:white;">Wallboard</a></li>
-                <li><a href="#" style="color:white;">Recordings</a></li>
-                <li><a href="#" style="color:white;">Subscribers</a></li>
-                <li><a href="#" style="color:white;">Payments</a></li>
+                <li><a href="#" >Wallboard</a></li>
+                <li><a href="#">Recordings</a></li>
+                <li><a href="#">Subscribers</a></li>
+                <li><a href="#">Payments</a></li>
                 </ul>
                             
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" style="color:white;">Recordings</a></li>
+                    <li><a href="#">Recordings</a></li>
                     <li class="dropdown">
-                        <a href="#" style="color:white;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
                         aria-expanded="false">Subscribers<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -46,45 +46,239 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                     </li>
-                        <li><a href="#" style="color:white;">Welcome Admin</a></li>
-                        <li><a href="#" style="color:white;">Add Admin</a></li>
+                        <li><a href="#">Welcome Admin</a></li>
+                        <li><a href="#">Add Admin</a></li>
                 </ul>
                           </div><!-- /.navbar-collapse -->
-                        </div><!-- /.container-fluid -->
+                        </div><!-- /.container -->
                       </nav>
 
                 <!--first_row-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-8">
-                   <a href="" class="btn btn-success btn-lg" style="background-color:#00CED1">FUND WALLET</a>
+                   <button type="button" class="btn btn-default btn-lg" class="button_lg" data-toggle="modal" data-target="#exampleModal">FUND WALLET</button>
                 </div>
                 <div class="col-lg-2">
-                    <a href="login.html" class="btn btn-success btn-lg" style="background-color:#007366">SUBSCRIBE</a>
+                    <button type="button" class="btn btn-default btn-lg" style="background-color:#007366; color: white" >SUBSCRIBE</button>
                 </div>
            </div>
 
            <!--second_row -->
            <div class="row">
-                <div class="col-lg-4"> 
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <!-- <h5 class="card-title">Card title</h5> -->
+                <div class="col-lg-3">
+                <div class="card">
+                        <div class="card-block">
+                           <div class="box ">
+                                <div id="circle" class="btn btn-warning"></div>
+                                    <!-- <div class="space"></div> -->
+                           </div>
+                           <h5 class="text-bold"><b>10 Total Subscribers</b></h5>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4"></div>
-                <div class="col-lg-4"> </div>
-                <div class="col-lg-4"> </div> -->
-
-            </div> <!--row-->
-
+            
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="box ">
+                                <div id="circle" class="btn btn-default" style="background-color:#007366"></div>
+                                <div class="space"></div>
+                            </div>
+                            <h5 class="text-bold"><b>56,000 Wallet Balance</b></h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3"> 
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="box ">
+                                <div id="circle" class="btn btn-default" style="background-color:#0d1691"></div>
+                                <!-- <div class="space"></div> -->
+                            </div>
+                                <h5 class="text-bold"><b>300 Total Calls</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="box ">
+                                <div id="circle" class="btn btn-default" style="background-color:rgb(82, 9, 20)"></div>
+                                <!-- <div class="space"></div> -->
+                            </div>
+                                <h5 class="text-bold"><b>100 Total Recordings</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--third_row -->
             <div class="row">
+                <div class="col-lg-6">
+                    <div id="container" style="width:100%; height:400px;">
+                        
+                    </div>
+                         
+                </div>
+               
+                <div class="col-lg-6">
+                        <h3>Recent Calls</h3>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>#</td>
+                            <td>From</td>
+                            <td>To</td>
+                            <td>Time</td>
+                            <td>Duration</td>
+                        </tr>
 
+                        <tr>
+                            <td>09099228818</td>
+                            <td>07012993382</td>
+                            <td>12:45</td>
+                            <td>4 Mins 40 Secs</td>
+                            <td>35 Mins 12 Secs</td>
+                        </tr>
+
+                        <tr>
+                            <td>09099228818</td>
+                            <td>07012993382</td>
+                            <td>12:45</td>
+                            <td>4 Mins 40 Secs</td>
+                            <td>35 Mins 12 Secs</td>
+                        </tr>
+
+                        <tr>
+                            <td>09099228818</td>
+                            <td>07012993382</td>
+                            <td>12:45</td>
+                            <td>4 Mins 40 Secs</td>
+                            <td>35 Mins 12 Secs</td>
+                        </tr>
+
+                        <tr>
+                            <td>09099228818</td>
+                            <td>07012993382</td>
+                            <td>12:45</td>
+                            <td>4 Mins 40 Secs</td>
+                            <td>35 Mins 12 Secs</td>
+                        </tr>
+
+                        <tr>
+                            <td>09099228818</td>
+                            <td>07012993382</td>
+                            <td>12:45</td>
+                            <td>4 Mins 40 Secs</td>
+                            <td>35 Mins 12 Secs</td>
+                        </tr>
+
+                        <tr>
+                            <td>09099228818</td>
+                            <td>07012993382</td>
+                            <td>12:45</td>
+                            <td>4 Mins 40 Secs</td>
+                            <td>35 Mins 12 Secs</td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
         </div> <!--container-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+        </button>
+                 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Fund Wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Amount to be funded</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter amount">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        
+        <script>
+           Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Total fruit consumption grouped by gender'
+    },
+    subtitle: {
+        text: 'Source: WorldClimate.com'
+    },
+    xAxis: {
+        categories: [
+            '8AM',
+            '9AM',
+            '10AM',
+            '11AM',
+            '12AM',
+             
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Rainfall (mm)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Tokyo',
+        data: [49.9, 71.5, 106.4, 129.2, 144.0]
+
+    }, {
+        name: 'New York',
+        data: [83.6, 78.8, 98.5, 93.4, 106.0]
+
+    }, {
+        name: 'London',
+        data: [48.9, 38.8, 39.3, 41.4, 47.0]
+
+    }, {
+        name: 'Berlin',
+        data: [42.4, 33.2, 34.5, 39.7, 52.6]
+
+    }]
+});
+        </script> 
     </body>
 </html>

@@ -1,7 +1,13 @@
 h5{
     color: black;
 }
-.navbar-default{
+.navbar-default .nav li>a{
+    color: white;
+}
+.navbar-default .navbar-brand{
+    color: white;
+}
+.navbar{
     background-color: #0b695e;
     color: white,
 
@@ -11,4 +17,43 @@ h5{
 }
 .col-lg-2 .col-lg-offset-8{
     color: #0b695e;
+}
+.button_lg{
+    background-color: #00CED1;
+    color: white;
+    width: 150;
+    height: 50px;
+    border-radius: 2px;
+    -webkit-transition: all ease 3s
+}
+ .button_lg:hover{
+    background-color: white;
+    color: #00CED1;
+    border: #00CED1
+ }
+.btn .btn-default:hover{
+    background-color: white;
+    color: #0b695e;
+    border: #0b695e;
+}
+.card-block{
+    border: 1px solid grey;
+    width: 250px;
+    height: 130px;
+    box-shadow: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+#circle {
+    /* background: goldenrod; */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+  
+}
+b{
+    margin-left: 10px;
 }
